@@ -111,7 +111,6 @@ footer {
         display: block;
         visibility: hidden;
         margin: -3rem 1rem 0rem;
-        transition: 1s ease-in-out;
         position: relative;
         z-index: -1;
         opacity: 0;
@@ -122,10 +121,15 @@ footer {
         margin: 0.5rem 1rem 1rem;
         opacity: 1;
         z-index: 999;
-    } 
+    }
+    .nav-burger.toggle, .nav-burger.toggle li {
+        transition: 1s ease-in;
+    }
+    header:hover .nav-burger, .nav-burger li {
+        transition: 1s ease-in;
+    }
     .nav-burger li {
         margin-bottom: -2rem;
-        transition: 1s ease-in-out;
     }
     .toggle li {
         margin-bottom: 1rem;
